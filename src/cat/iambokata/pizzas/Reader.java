@@ -24,15 +24,15 @@ public class Reader {
 
         String[] splittedFirstLine = firstLine.split(" ");
 
-        dataSet.setSlices(Integer.parseInt(splittedFirstLine[0]));
-        dataSet.setPizzaTypes(Integer.parseInt(splittedFirstLine[1]));
+        dataSet.setSlices(Long.parseLong(splittedFirstLine[0]));
+        dataSet.setPizzaTypes(Long.parseLong(splittedFirstLine[1]));
 
         String secondLine = br.readLine();
 
         String[] splittedSecondLine = secondLine.split(" ");
 
-        List<Integer> pizzas = Arrays.stream(splittedSecondLine)
-                .map(Integer::parseInt)
+        List<Long> pizzas = Arrays.stream(splittedSecondLine)
+                .map(Long::parseLong)
                 .collect(Collectors.toList());
 
         dataSet.setPizzas(pizzas);

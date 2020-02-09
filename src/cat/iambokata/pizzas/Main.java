@@ -15,7 +15,7 @@ public class Main {
 
         Reader reader = new Reader();
 
-        DataSet dataSet = reader.read(B_SMALL);
+        DataSet dataSet = reader.read(E_ALSO_BIG);
 
         System.out.println(dataSet.toString());
 
@@ -23,6 +23,7 @@ public class Main {
 
         Result result = pizzaSlicesCalculator.calculateResult();
 
+        System.out.println(result.toString());
     }
 
     private static void printResult(DataSet dataSet) {

@@ -4,21 +4,21 @@ import java.util.List;
 
 public class Result {
 
-    private Integer pizzaTypes;
+    private Long pizzaTypes;
     private List<Integer> orderingPizzasIndex;
 
     public Result() {}
 
-    public Result(Integer pizzaTypes, List<Integer> orderingPizzasIndex) {
+    public Result(Long pizzaTypes, List<Integer> orderingPizzasIndex) {
         this.pizzaTypes = pizzaTypes;
         this.orderingPizzasIndex = orderingPizzasIndex;
     }
 
-    public Integer getPizzaTypes() {
+    public Long getPizzaTypes() {
         return pizzaTypes;
     }
 
-    public void setPizzaTypes(Integer pizzaTypes) {
+    public void setPizzaTypes(Long pizzaTypes) {
         this.pizzaTypes = pizzaTypes;
     }
 
@@ -28,5 +28,13 @@ public class Result {
 
     public void setOrderingPizzasIndex(List<Integer> orderingPizzasIndex) {
         this.orderingPizzasIndex = orderingPizzasIndex;
+    }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "pizzaTypes=" + pizzaTypes +
+                ", orderingPizzasIndex=" + orderingPizzasIndex +
+                '}';
     }
 }

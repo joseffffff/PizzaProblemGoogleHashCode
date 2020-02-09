@@ -5,41 +5,41 @@ import java.util.List;
 
 public class DataSet {
 
-    private Integer slices;
-    private Integer pizzaTypes;
-    private List<Integer> pizzas;
+    private Long slices;
+    private Long pizzaTypes;
+    private List<Long> pizzas;
 
     public DataSet() {
 
     }
 
-    public DataSet(Integer slices, Integer pizzaTypes, List<Integer> pizzas) {
+    public DataSet(Long slices, Long pizzaTypes, List<Long> pizzas) {
         this.slices = slices;
         this.pizzaTypes = pizzaTypes;
         this.pizzas = pizzas;
     }
 
-    public Integer getSlices() {
+    public Long getSlices() {
         return slices;
     }
 
-    public void setSlices(Integer slices) {
+    public void setSlices(Long slices) {
         this.slices = slices;
     }
 
-    public Integer getPizzaTypes() {
+    public Long getPizzaTypes() {
         return pizzaTypes;
     }
 
-    public void setPizzaTypes(Integer pizzaTypes) {
+    public void setPizzaTypes(Long pizzaTypes) {
         this.pizzaTypes = pizzaTypes;
     }
 
-    public List<Integer> getPizzas() {
+    public List<Long> getPizzas() {
         return pizzas;
     }
 
-    public void setPizzas(List<Integer> pizzas) {
+    public void setPizzas(List<Long> pizzas) {
         this.pizzas = pizzas;
     }
 
@@ -60,7 +60,7 @@ public class DataSet {
                 '}';
     }
 
-    public Integer getPizzasSum() {
-        return this.pizzas.stream().reduce(0, Integer::sum);
+    public Long getPizzasSum() {
+        return this.pizzas.stream().reduce(0l, Long::sum);
     }
 }
