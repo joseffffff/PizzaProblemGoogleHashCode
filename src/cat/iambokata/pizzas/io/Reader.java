@@ -1,4 +1,4 @@
-package cat.iambokata.pizzas;
+package cat.iambokata.pizzas.io;
 
 import cat.iambokata.pizzas.models.DataSet;
 
