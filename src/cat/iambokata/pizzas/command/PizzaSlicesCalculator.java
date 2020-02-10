@@ -49,11 +49,6 @@ public class PizzaSlicesCalculator {
             Integer lastPizzaIndex = pizzas.size() - 1;
             Long lastPizzaSlices = pizzas.get(lastPizzaIndex);
 
-            // System.out.println("-------------------------------------------------------------------------");
-            // System.out.println("INDEX: " + lastPizzaIndex);
-            // System.out.println("SLICES: " + lastPizzaSlices);
-            // System.out.println(pizzas);
-
             pizzas.remove(lastPizzaIndex.intValue());
 
             if ((getStackSum(stack) + lastPizzaSlices) == dataSet.getSlices()) {
@@ -61,7 +56,6 @@ public class PizzaSlicesCalculator {
                 return stack;
             } else if ((getStackSum(stack) + lastPizzaSlices) < dataSet.getSlices()) {
                 stack.put(lastPizzaIndex, lastPizzaSlices);
-                // return this.processStack(stack, pizzas);
             }
         }
 

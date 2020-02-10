@@ -10,17 +10,17 @@ import java.io.IOException;
 
 public class Main {
 
-    private static final String A_EXAMPLE = "a_example.in";
-    private static final String B_SMALL = "b_small.in";
-    private static final String C_MEDIUM = "c_medium.in";
-    private static final String D_QUITE_BIG = "d_quite_big.in";
-    private static final String E_ALSO_BIG = "e_also_big.in";
+    private static final String A_EXAMPLE = "input/a_example.in";
+    private static final String B_SMALL = "input/b_small.in";
+    private static final String C_MEDIUM = "input/c_medium.in";
+    private static final String D_QUITE_BIG = "input/d_quite_big.in";
+    private static final String E_ALSO_BIG = "input/e_also_big.in";
 
     public static void main(String[] args) throws IOException {
 
         Reader reader = new Reader();
 
-        DataSet dataSet = reader.read(B_SMALL);
+        DataSet dataSet = reader.read(C_MEDIUM);
 
         System.out.println(dataSet.toString());
 
